@@ -1,0 +1,38 @@
+1) which kubectl
+2) which minikube
+3) minikube start
+# check previos deployements
+4) kubectl get deployments
+5) kubectl delete deployment client-deployment
+6) kubectl get services
+7) kubectl delete service client-node-port
+# deployment
+# can be one-by-one
+kubectl apply -f k8s/client-deployment.yaml
+# or group deployments of files as
+8) kubectl apply -f k8s
+9) kubectl get pods and kubctl get services
+# pull pod log.. first kubectl get pods and then 
+10) kubectl logs server-deployment-86cb756646-ssgwg
+11) kubectl get storageclass
+12) kubectl describe storageclass
+13) kubectl get pv #or pvc
+14) kubectl create secret generic pgpassword --from-literal PGPASSWORD=12345asdf
+15) kubectl get secrets
+###
+### Using ingress-nginx, a community led project run by k8s
+### github.com/kubernetes/ingress-nginx
+### not using kubernetes-ingress, led by company nginx
+### github.com/nginxinc/kubernetes-ingress
+# Just in case you wanted to understand ingress-nginx a bit better, 
+# check out this article by Hongli Lai - 
+# https://www.joyfulbikeshedding.com/blog/2018-03-26-studying-the-kubernetes-ingress-system.html.  
+# Hongli is an absolute genius, he co-created Phusion Passenger, an extremely 
+# popular webserver that integrates with Nginx.
+###
+# testing local
+16) minikube ip
+17) minikube dashboard
+
+
+
