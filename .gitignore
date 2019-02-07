@@ -19,6 +19,7 @@
 .env.production.local
 run-travis-container.txt
 service-account.json
+.travis.yaml
 
 
 npm-debug.log*
