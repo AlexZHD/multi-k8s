@@ -33,6 +33,10 @@ kubectl apply -f k8s/client-deployment.yaml
 # testing local
 16) minikube ip
 17) minikube dashboard
-
+#...
+#Google cloud deployment
+# create service acount on Google cloud for tiler and helm usage
+18) kubectl create serviceaccount --namespace kube-system tiller
+19) kubectl create clusterrolebinding tiller-cluster-rule --clusterrole=cluster-admin --serviceaccount=kube-system:tiller
 
 
